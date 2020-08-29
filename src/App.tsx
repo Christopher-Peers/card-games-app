@@ -7,11 +7,13 @@ import './App.css';
 
 
 function App() {
-  return (
-    <Provider store={store}>
-        <h1>Card Games</h1>
-    </Provider>
-  );
+
+    console.log(store.getState());
+    return (
+        <Provider store={store}>
+            <h1>Card Games</h1>
+        </Provider>
+    );
 }
 
 export default App;
